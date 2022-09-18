@@ -4,14 +4,14 @@ pipeline {
         AWS_ACCESS_KEY_ID = credentials('jenkins-access-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-secret-access-key')
         REGION = "us-east-1"
-        AWS_S3_BUCKET = "sudos-tawazun1-s3bucket"
+        AWS_S3_BUCKET = "sudos-tawazun1-s3bucket"  //change
         ARTIFACT_NAME = "duihua.war"
         AWS_EB_APP_NAME = "sudos-duihua-app"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "sudos-duihua-env"
-        SONAR_IP = "3.82.143.230"
-        SONAR_PROJECT = "sudos"
-        SONAR_TOKEN = "3794d439cf6df32cfd520133690707e35ff58ad7"
+        AWS_EB_ENVIRONMENT = "sudos-duihua-env" 
+        SONAR_IP = "3.82.143.230"  //change
+        SONAR_PROJECT = "sudos"     //change
+        SONAR_TOKEN = "3794d439cf6df32cfd520133690707e35ff58ad7"  //change
     }
     stages {
         stage('Validate') {
